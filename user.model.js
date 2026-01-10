@@ -37,4 +37,6 @@ const userSchema = new Schema({
   },
 });
 
+//generate access and refresh token
+
 export const User = mongoose.model("User", userSchema);
