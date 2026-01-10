@@ -13,8 +13,8 @@ const likeSchema = new Schema(
     },
   },
   {
-    timestamp: true,
+    timestamps: true,
   }
 );
 
-export { likeSchema };
+const Like = mongoose.model("Like", likeSchema);
