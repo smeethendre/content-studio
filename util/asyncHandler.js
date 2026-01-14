@@ -6,7 +6,7 @@ import { json } from "express";
 const asyncHandler = (fn) => async (req, res, next) => {
   try {
     await fn(req, res, next);
-  } catch (error) {
+  } catch (err) {
     res.send(error.code || 500).json({
       success: false,
       message: error.message,
