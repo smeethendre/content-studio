@@ -1,7 +1,6 @@
 import express, { json } from "express";
 import cors from "cors";
 import cookieParser from "cookie-parser";
-import { urlencoded } from "express";
 import { json } from "express";
 const app = express();
 
