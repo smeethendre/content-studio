@@ -4,6 +4,6 @@ const app = express();
 
 app.use(
   cors({
-    limit: "16kb",
+    
   })
 );
