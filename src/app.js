@@ -15,13 +15,15 @@ app.use(
 app.use(cookieParser());
 
 app.use(
-  urlencoded({
+  express.urlencoded({
     limit: "256kb",
   })
 );
 
+app.use(express.static("public"));
+
 app.use(
-  json({
+  express.json({
     limit: "256kb",
   })
 );
